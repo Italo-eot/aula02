@@ -108,35 +108,58 @@
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
 
-exp1 = True
-exp2 = False
-verifica = exp1 and exp2
-print("Resultado lógico AND: ", verifica)
+# exp1 = True
+# exp2 = False
+# verifica = exp1 and exp2
+# print("Resultado lógico AND: ", verifica)
 
-# 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+# # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
 
-resultado_or = exp1 or exp2
-print("Resultado or é: ", resultado_or)
+# resultado_or = exp1 or exp2
+# print("Resultado or é: ", resultado_or)
 
-# 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+# # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 
-resultado_invertido = not exp1
-print("Resultado NOT é: ", resultado_invertido)
+# resultado_invertido = not exp1
+# print("Resultado NOT é: ", resultado_invertido)
 
-# 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+# # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 
-resultado_comparado = exp1 == exp2
-print("Resultado == é: ", resultado_comparado)
+# resultado_comparado = exp1 == exp2
+# print("Resultado == é: ", resultado_comparado)
 
-# 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+# # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
-resultado_diferentes = exp1 != exp2
-print("Resultado != é: ", resultado_diferentes)
+# resultado_diferentes = exp1 != exp2
+# print("Resultado != é: ", resultado_diferentes)
 
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+
+# try:
+#     celsius = float(input("Insira sua temperatura em Celsius: "))
+#     conversao = (celsius * 9/5) + 32
+#     print(f"{celsius}°C é igual a {conversao}°F")
+# except ValueError as e:
+#     print("O tipo de temperatura inserido não atende ao solicitado")
+    
+
 # 22: Verificador de Palíndromo
+
+palindromo = input("Insira aqui sua mensagem: ")
+
+if isinstance (palindromo, str):
+    formate = palindromo.replace(" ","").lower()
+    if formate == formate[::-1]:
+        print("É um palindromo")
+    else:
+        print("Não é um palindromo")
+else:
+    print("Entrada inválida. Por favor inserir novamente!")
+
+
+
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
