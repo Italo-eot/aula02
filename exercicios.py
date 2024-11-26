@@ -147,19 +147,69 @@
 
 # 22: Verificador de Palíndromo
 
-palindromo = input("Insira aqui sua mensagem: ")
+# palindromo = input("Insira aqui sua mensagem: ")
 
-if isinstance (palindromo, str):
-    formate = palindromo.replace(" ","").lower()
-    if formate == formate[::-1]:
-        print("É um palindromo")
-    else:
-        print("Não é um palindromo")
-else:
-    print("Entrada inválida. Por favor inserir novamente!")
-
-
+# if isinstance (palindromo, str):
+#     formate = palindromo.replace(" ","").lower()
+#     if formate == formate[::-1]:
+#         print("É um palindromo")
+#     else:
+#         print("Não é um palindromo")
+# else:
+#     print("Entrada inválida. Por favor inserir novamente!")
 
 # 23: Calculadora Simples
+
+# try:
+
+#     numero_1 = float(input("Insira o primeiro número: "))
+#     numero_2 = float(input("Insira o segundo número: "))
+#     operador = input("Digite o operador (+, -, *, /): ")
+
+#     if operador == "-":
+#         resultado = numero_1 - numero_2
+#     elif operador == "+":
+#         resultado = numero_1 + numero_2
+#     elif operador == "*":
+#         resultado = numero_1 * numero_2
+#     elif operador == "/" and numero_2 != 0:
+#         resultado = numero_1 / numero_2
+#     else:
+#         print("Operador inválido. Tente novamente.")
+
+#     print(f"Resultado: {resultado}")
+
+# except ValueError:
+#     print("Erro: Entrada inválida. Certifique de inserir números.")
+
 # 24: Classificador de Números
+
+# try:
+
+#     numero = int(input("Insira o número desejado: "))
+
+#     if numero > 0:
+#         print("Número positivo!")
+#     elif numero < 0:
+#         print("Número negativo!")
+#     else:
+#         print("Número Zero!")
+#     if numero % 2 == 0:
+#         print("Número par!")
+#     else:
+#         print("Número ímpar!")
+# except ValueError:
+#     print("Insira, por gentileza, um número inteiro.")
+
 # 25: Conversão de Tipo com Validação
+
+# digita = input("Digite uma lista de números separados por vírgula: ")
+# separa = digita.split(",")
+# lista = []
+
+# try:
+#     for num in separa:
+#         lista.append(int(num.strip()))
+#     print(f"Nossa lista de números é: {lista}")
+# except ValueError:
+#     print("Erro: Certifique-se de inserir números.")
